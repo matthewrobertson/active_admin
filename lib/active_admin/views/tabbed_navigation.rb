@@ -48,7 +48,7 @@ module ActiveAdmin
             text_node link_to(item.name, item.url || "#")
             render_nested_menu(item)
           else
-            link_to item.name, resource_path(item) 
+            link_to item.name, item.url
           end
         end
       end
